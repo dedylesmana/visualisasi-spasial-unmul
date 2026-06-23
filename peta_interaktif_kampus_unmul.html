@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_41efd0f78144b5822cee30f5c6bc247d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_41efd0f78144b5822cee30f5c6bc247d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_41efd0f78144b5822cee30f5c6bc247d = L.map(
+                "map_41efd0f78144b5822cee30f5c6bc247d",
+                {
+                    center: [-0.46838207692307693, 117.15503423076925],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7784ef10a1d1d0e20af04b318798406d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7784ef10a1d1d0e20af04b318798406d.addTo(map_41efd0f78144b5822cee30f5c6bc247d);
+        
+    
+            var marker_d97a3976627fab17e3322bf8c3b58ddf = L.marker(
+                [-0.468451, 117.153998],
+                {
+}
+            ).addTo(map_41efd0f78144b5822cee30f5c6bc247d);
+        
+    
+            var icon_9eed737583e14f29a1bac66c92aabe4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bafee5307b8d24896117e1a33393aa2f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_beb206e482ad6a8f0235437c093a49cf = $(`<div id="html_beb206e482ad6a8f0235437c093a49cf" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; width: 200px;'>         <h4 style='margin: 0 0 5px 0; color: #2C3E50;'><b>Universitas Mulawarman</b></h4>         <table style='width: 100%; border-collapse: collapse; font-size: 12px;'>             <tr><td style='padding: 3px 0; width: 70px;'><b>Fungsi:</b></td><td>Campus</td></tr>             <tr><td style='padding: 3px 0;'><b>Fakultas:</b></td><td>Umum</td></tr>         </table>     </div>     </div>`)[0];
+                popup_bafee5307b8d24896117e1a33393aa2f.setContent(html_beb206e482ad6a8f0235437c093a49cf);
+            
+        
+
+        marker_d97a3976627fab17e3322bf8c3b58ddf.bindPopup(popup_bafee5307b8d24896117e1a33393aa2f)
+        ;
+
+        
+    
+    
+            marker_d97a3976627fab17e3322bf8c3b58ddf.bindTooltip(
+                `<div>
+                     Universitas Mulawarman
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d97a3976627fab17e3322bf8c3b58ddf.setIcon(icon_9eed737583e14f29a1bac66c92aabe4a);
+            
+    
+            var marker_047eb9a81d5a895f33de14f6d00201f1 = L.marker(
+                [-0.467609, 117.154421],
+                {
+}
+            ).addTo(map_41efd0f78144b5822cee30f5c6bc247d);
+        
+    
+            var icon_067dd491466ffe8c5f8ecca707749ea3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3882d2c2532481a8bca49d341c894f5d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dbf8aefa18c766b7d43ae3f1316e1a18 = $(`<div id="html_dbf8aefa18c766b7d43ae3f1316e1a18" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; width: 200px;'>         <h4 style='margin: 0 0 5px 0; color: #2C3E50;'><b>Fakultas Ekonomi dan Bisnis</b></h4>         <table style='width: 100%; border-collapse: collapse; font-size: 12px;'>             <tr><td style='padding: 3px 0; width: 70px;'><b>Fungsi:</b></td><td>Kuliah</td></tr>             <tr><td style='padding: 3px 0;'><b>Fakultas:</b></td><td>FEB</td></tr>         </table>     </div>     </div>`)[0];
+                popup_3882d2c2532481a8bca49d341c894f5d.setContent(html_dbf8aefa18c766b7d43ae3f1316e1a18);
+            
+        
+
+        marker_047eb9a81d5a895f33de14f6d00201f1.bindPopup(popup_3882d2c2532481a8bca49d341c894f5d)
+        ;
+
+        
+    
+    
+            marker_047eb9a81d5a895f33de14f6d00201f1.bindTooltip(
+                `<div>
+                     Fakultas Ekonomi dan Bisnis
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_047eb9a81d5a895f33de14f6d00201f1.setIcon(icon_067dd491466ffe8c5f8ecca707749ea3);
+            
+    
+            var marker_54dc96ecc241e4f2fa02ebb8217c1f93 = L.marker(
+                [-0.470041, 117.153081],
+                {
+}
+            ).addTo(map_41efd0f78144b5822cee30f5c6bc247d);
+        
+    
+            var icon_e149590c4a14f4d22118f9f0e2661d39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8bf00bb02a190712897505da8cf9c6e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a630c85ecee1be871a0b0800582d0ddc = $(`<div id="html_a630c85ecee1be871a0b0800582d0ddc" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; width: 200px;'>         <h4 style='margin: 0 0 5px 0; color: #2C3E50;'><b>Fakultas MIPA</b></h4>         <table style='width: 100%; border-collapse: collapse; font-size: 12px;'>             <tr><td style='padding: 3px 0; width: 70px;'><b>Fungsi:</b></td><td>Kuliah</td></tr>             <tr><td style='padding: 3px 0;'><b>Fakultas:</b></td><td>MIPA</td></tr>         </table>     </div>     </div>`)[0];
+                popup_c8bf00bb02a190712897505da8cf9c6e.setContent(html_a630c85ecee1be871a0b0800582d0ddc);
+            
+        
+
+        marker_54dc96ecc241e4f2fa02ebb8217c1f93.bindPopup(popup_c8bf00bb02a190712897505da8cf9c6e)
+        ;
+
+        
+    
+    
+            marker_54dc96ecc241e4f2fa02ebb8217c1f93.bindTooltip(
+                `<div>
+                     Fakultas MIPA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_54dc96ecc241e4f2fa02ebb8217c1f93.setIcon(icon_e149590c4a14f4d22118f9f0e2661d39);
+            
+    
+            var marker_6a0a59b71c0a5bdbceb19a672da6b0cd = L.marker(
+                [-0.467574, 117.158993],
+                {
+}
+            ).addTo(map_41efd0f78144b5822cee30f5c6bc247d);
+        
+    
+            var icon_17f97c665123124780afe9891c85a456 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48d4c45a7f1dbf7ba7a996e0bc0627bc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ad24f8f5201ada15bdbcbefc0f982b0d = $(`<div id="html_ad24f8f5201ada15bdbcbefc0f982b0d" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; width: 200px;'>         <h4 style='margin: 0 0 5px 0; color: #2C3E50;'><b>Fakultas Teknik</b></h4>         <table style='width: 100%; border-collapse: collapse; font-size: 12px;'>             <tr><td style='padding: 3px 0; width: 70px;'><b>Fungsi:</b></td><td>Kuliah</td></tr>             <tr><td style='padding: 3px 0;'><b>Fakultas:</b></td><td>Teknik</td></tr>         </table>     </div>     </div>`)[0];
+                popup_48d4c45a7f1dbf7ba7a996e0bc0627bc.setContent(html_ad24f8f5201ada15bdbcbefc0f982b0d);
+            
+        
+
+        marker_6a0a59b71c0a5bdbceb19a672da6b0cd.bindPopup(popup_48d4c45a7f1dbf7ba7a996e0bc0627bc)
+        ;
+
+        
+    
+    
+            marker_6a0a59b71c0a5bdbceb19a672da6b0cd.bindTooltip(
+                `<div>
+                     Fakultas Teknik
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6a0a59b71c0a5bdbceb19a672da6b0cd.setIcon(icon_17f97c665123124780afe9891c85a456);
+            
+    
+            var marker_7e0e94d02da2fbe0cc84a6aa4de1761c = L.marker(
+                [-0.465643, 117.155989],
+                {
+}
+            ).addTo(map_41efd0f78144b5822cee30f5c6bc247d);
+        
+    
+            var icon_f68335aab55a75cb6ca779165105f81b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_503b6714168a9cb60f5e0c0fb8638cc1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9e119205d1b609173b559a1bc4f6dfe3 = $(`<div id="html_9e119205d1b609173b559a1bc4f6dfe3" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; width: 200px;'>         <h4 style='margin: 0 0 5px 0; color: #2C3E50;'><b>Fakultas Kedokteran</b></h4>         <table style='width: 100%; border-collapse: collapse; font-size: 12px;'>             <tr><td style='padding: 3px 0; width: 70px;'><b>Fungsi:</b></td><td>Kuliah</td></tr>             <tr><td style='padding: 3px 0;'><b>Fakultas:</b></td><td>Kedokteran</td></tr>         </table>     </div>     </div>`)[0];
+                popup_503b6714168a9cb60f5e0c0fb8638cc1.setContent(html_9e119205d1b609173b559a1bc4f6dfe3);
+            
+        
+
+        marker_7e0e94d02da2fbe0cc84a6aa4de1761c.bindPopup(popup_503b6714168a9cb60f5e0c0fb8638cc1)
+        ;
+
+        
+    
+    
+            marker_7e0e94d02da2fbe0cc84a6aa4de1761c.bindTooltip(
+                `<div>
+                     Fakultas Kedokteran
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7e0e94d02da2fbe0cc84a6aa4de1761c.setIcon(icon_f68335aab55a75cb6ca779165105f81b);
+            
+    
+            var marker_5040f0c8acc5c3f2c4720783dbc075d5 = L.marker(
+                [-0.471166, 117.153465],
+                {
+}
+            ).addTo(map_41efd0f78144b5822cee30f5c6bc247d);
+        
+    
+            var icon_cc31fdb8351e6e3a9bce530a0288c4df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17d232a8604a970e221a23f7c462c13c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_55f43bfb3c9100a132c726a70354376d = $(`<div id="html_55f43bfb3c9100a132c726a70354376d" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; width: 200px;'>         <h4 style='margin: 0 0 5px 0; color: #2C3E50;'><b>Fakultas Kehutanan</b></h4>         <table style='width: 100%; border-collapse: collapse; font-size: 12px;'>             <tr><td style='padding: 3px 0; width: 70px;'><b>Fungsi:</b></td><td>Kuliah</td></tr>             <tr><td style='padding: 3px 0;'><b>Fakultas:</b></td><td>Kehutanan</td></tr>         </table>     </div>     </div>`)[0];
+                popup_17d232a8604a970e221a23f7c462c13c.setContent(html_55f43bfb3c9100a132c726a70354376d);
+            
+        
+
+        marker_5040f0c8acc5c3f2c4720783dbc075d5.bindPopup(popup_17d232a8604a970e221a23f7c462c13c)
+        ;
+
+        
+    
+    
+            marker_5040f0c8acc5c3f2c4720783dbc075d5.bindTooltip(
+                `<div>
+                     Fakultas Kehutanan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5040f0c8acc5c3f2c4720783dbc075d5.setIcon(icon_cc31fdb8351e6e3a9bce530a0288c4df);
+            
+    
+            var marker_9519b94a331b60adfe780cee83bc3b19 = L.marker(
+                [-0.469137, 117.153989],
+                {
+}
+            ).addTo(map_41efd0f78144b5822cee30f5c6bc247d);
+        
+    
+            var icon_946baf5f7c3dd030f1bf05b1e3f8a6da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22d8a32ea31e59cce557d1d3146bdc53 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e4d7b089eb2656a8ec05f67e1ee6fea0 = $(`<div id="html_e4d7b089eb2656a8ec05f67e1ee6fea0" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; width: 200px;'>         <h4 style='margin: 0 0 5px 0; color: #2C3E50;'><b>Fakultas Ilmu Sosial dan Politik</b></h4>         <table style='width: 100%; border-collapse: collapse; font-size: 12px;'>             <tr><td style='padding: 3px 0; width: 70px;'><b>Fungsi:</b></td><td>Kuliah</td></tr>             <tr><td style='padding: 3px 0;'><b>Fakultas:</b></td><td>FISIP</td></tr>         </table>     </div>     </div>`)[0];
+                popup_22d8a32ea31e59cce557d1d3146bdc53.setContent(html_e4d7b089eb2656a8ec05f67e1ee6fea0);
+            
+        
+
+        marker_9519b94a331b60adfe780cee83bc3b19.bindPopup(popup_22d8a32ea31e59cce557d1d3146bdc53)
+        ;
+
+        
+    
+    
+            marker_9519b94a331b60adfe780cee83bc3b19.bindTooltip(
+                `<div>
+                     Fakultas Ilmu Sosial dan Politik
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9519b94a331b60adfe780cee83bc3b19.setIcon(icon_946baf5f7c3dd030f1bf05b1e3f8a6da);
+            
+    
+            var marker_3f4f8834598db31dd5402e2874126963 = L.marker(
+                [-0.468322, 117.155114],
+                {
+}
+            ).addTo(map_41efd0f78144b5822cee30f5c6bc247d);
+        
+    
+            var icon_c6025fc3874c3afe1c12c7752927723c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad015b2d109e11b5cc9f4c6a22308db2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6e59fbbc504b731265e0e22b1e4f4072 = $(`<div id="html_6e59fbbc504b731265e0e22b1e4f4072" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; width: 200px;'>         <h4 style='margin: 0 0 5px 0; color: #2C3E50;'><b>Perpustakaan Universitas Mulawarman</b></h4>         <table style='width: 100%; border-collapse: collapse; font-size: 12px;'>             <tr><td style='padding: 3px 0; width: 70px;'><b>Fungsi:</b></td><td>Fasilitas</td></tr>             <tr><td style='padding: 3px 0;'><b>Fakultas:</b></td><td>Umum</td></tr>         </table>     </div>     </div>`)[0];
+                popup_ad015b2d109e11b5cc9f4c6a22308db2.setContent(html_6e59fbbc504b731265e0e22b1e4f4072);
+            
+        
+
+        marker_3f4f8834598db31dd5402e2874126963.bindPopup(popup_ad015b2d109e11b5cc9f4c6a22308db2)
+        ;
+
+        
+    
+    
+            marker_3f4f8834598db31dd5402e2874126963.bindTooltip(
+                `<div>
+                     Perpustakaan Universitas Mulawarman
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3f4f8834598db31dd5402e2874126963.setIcon(icon_c6025fc3874c3afe1c12c7752927723c);
+            
+    
+            var marker_e49313369d02161e472b228b9f81f133 = L.marker(
+                [-0.468405, 117.154165],
+                {
+}
+            ).addTo(map_41efd0f78144b5822cee30f5c6bc247d);
+        
+    
+            var icon_44701e929ee9174ad91cebd52c11b966 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0fe19679f39b87f85bd31db23c5a3b38 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5fd3bfcc02b7e1b0a6a5c25b370e3797 = $(`<div id="html_5fd3bfcc02b7e1b0a6a5c25b370e3797" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; width: 200px;'>         <h4 style='margin: 0 0 5px 0; color: #2C3E50;'><b>Rektorat Universitas Mulawarman</b></h4>         <table style='width: 100%; border-collapse: collapse; font-size: 12px;'>             <tr><td style='padding: 3px 0; width: 70px;'><b>Fungsi:</b></td><td>Administrasi</td></tr>             <tr><td style='padding: 3px 0;'><b>Fakultas:</b></td><td>Umum</td></tr>         </table>     </div>     </div>`)[0];
+                popup_0fe19679f39b87f85bd31db23c5a3b38.setContent(html_5fd3bfcc02b7e1b0a6a5c25b370e3797);
+            
+        
+
+        marker_e49313369d02161e472b228b9f81f133.bindPopup(popup_0fe19679f39b87f85bd31db23c5a3b38)
+        ;
+
+        
+    
+    
+            marker_e49313369d02161e472b228b9f81f133.bindTooltip(
+                `<div>
+                     Rektorat Universitas Mulawarman
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e49313369d02161e472b228b9f81f133.setIcon(icon_44701e929ee9174ad91cebd52c11b966);
+            
+    
+            var marker_8295cae4553c12ab8814bd9f4bdb1750 = L.marker(
+                [-0.468817, 117.156964],
+                {
+}
+            ).addTo(map_41efd0f78144b5822cee30f5c6bc247d);
+        
+    
+            var icon_6df86723f9dff7b2ee0675fd6c8a08ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08d40882e7a3bb47334e0a735cd2711f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1e5fe1f0047eef959fd73bc376b23b6f = $(`<div id="html_1e5fe1f0047eef959fd73bc376b23b6f" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; width: 200px;'>         <h4 style='margin: 0 0 5px 0; color: #2C3E50;'><b>GOR 27 September</b></h4>         <table style='width: 100%; border-collapse: collapse; font-size: 12px;'>             <tr><td style='padding: 3px 0; width: 70px;'><b>Fungsi:</b></td><td>Fasilitas</td></tr>             <tr><td style='padding: 3px 0;'><b>Fakultas:</b></td><td>Umum</td></tr>         </table>     </div>     </div>`)[0];
+                popup_08d40882e7a3bb47334e0a735cd2711f.setContent(html_1e5fe1f0047eef959fd73bc376b23b6f);
+            
+        
+
+        marker_8295cae4553c12ab8814bd9f4bdb1750.bindPopup(popup_08d40882e7a3bb47334e0a735cd2711f)
+        ;
+
+        
+    
+    
+            marker_8295cae4553c12ab8814bd9f4bdb1750.bindTooltip(
+                `<div>
+                     GOR 27 September
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8295cae4553c12ab8814bd9f4bdb1750.setIcon(icon_6df86723f9dff7b2ee0675fd6c8a08ae);
+            
+    
+            var marker_db15362639aa2c39e39b21398d3a42dc = L.marker(
+                [-0.467838, 117.155853],
+                {
+}
+            ).addTo(map_41efd0f78144b5822cee30f5c6bc247d);
+        
+    
+            var icon_215b4fde855b3c4102f511fc354238df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5736e5b13c8ec864539fcbdc3576bebe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_27fc5290494e20bc5964f82f7918c8dd = $(`<div id="html_27fc5290494e20bc5964f82f7918c8dd" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; width: 200px;'>         <h4 style='margin: 0 0 5px 0; color: #2C3E50;'><b>LP2M Universitas Mulawarman</b></h4>         <table style='width: 100%; border-collapse: collapse; font-size: 12px;'>             <tr><td style='padding: 3px 0; width: 70px;'><b>Fungsi:</b></td><td>Administrasi</td></tr>             <tr><td style='padding: 3px 0;'><b>Fakultas:</b></td><td>Umum</td></tr>         </table>     </div>     </div>`)[0];
+                popup_5736e5b13c8ec864539fcbdc3576bebe.setContent(html_27fc5290494e20bc5964f82f7918c8dd);
+            
+        
+
+        marker_db15362639aa2c39e39b21398d3a42dc.bindPopup(popup_5736e5b13c8ec864539fcbdc3576bebe)
+        ;
+
+        
+    
+    
+            marker_db15362639aa2c39e39b21398d3a42dc.bindTooltip(
+                `<div>
+                     LP2M Universitas Mulawarman
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db15362639aa2c39e39b21398d3a42dc.setIcon(icon_215b4fde855b3c4102f511fc354238df);
+            
+    
+            var marker_0529bb18cd8d4afd606d43699e999ba7 = L.marker(
+                [-0.46996, 117.153835],
+                {
+}
+            ).addTo(map_41efd0f78144b5822cee30f5c6bc247d);
+        
+    
+            var icon_de1f86410c334dd3be9d041da0d8cc78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7df02e0d53db2d9c20bd21930b753ee = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a10f9056d0d328bf62df7487cbeb243b = $(`<div id="html_a10f9056d0d328bf62df7487cbeb243b" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; width: 200px;'>         <h4 style='margin: 0 0 5px 0; color: #2C3E50;'><b>Student Center Universitas Mulawarman</b></h4>         <table style='width: 100%; border-collapse: collapse; font-size: 12px;'>             <tr><td style='padding: 3px 0; width: 70px;'><b>Fungsi:</b></td><td>Fasilitas</td></tr>             <tr><td style='padding: 3px 0;'><b>Fakultas:</b></td><td>Umum</td></tr>         </table>     </div>     </div>`)[0];
+                popup_d7df02e0d53db2d9c20bd21930b753ee.setContent(html_a10f9056d0d328bf62df7487cbeb243b);
+            
+        
+
+        marker_0529bb18cd8d4afd606d43699e999ba7.bindPopup(popup_d7df02e0d53db2d9c20bd21930b753ee)
+        ;
+
+        
+    
+    
+            marker_0529bb18cd8d4afd606d43699e999ba7.bindTooltip(
+                `<div>
+                     Student Center Universitas Mulawarman
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0529bb18cd8d4afd606d43699e999ba7.setIcon(icon_de1f86410c334dd3be9d041da0d8cc78);
+            
+    
+            var marker_098e4e4e462a080e26f0fb0788e45a53 = L.marker(
+                [-0.466004, 117.155578],
+                {
+}
+            ).addTo(map_41efd0f78144b5822cee30f5c6bc247d);
+        
+    
+            var icon_01671d0fad32a71996aa58854c75402f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_148c316856095c745973f01cc9a06760 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_809739f05d36a5fcafbf673651c93d47 = $(`<div id="html_809739f05d36a5fcafbf673651c93d47" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; width: 200px;'>         <h4 style='margin: 0 0 5px 0; color: #2C3E50;'><b>Masjid Al Fatihah UNMUL</b></h4>         <table style='width: 100%; border-collapse: collapse; font-size: 12px;'>             <tr><td style='padding: 3px 0; width: 70px;'><b>Fungsi:</b></td><td>Fasilitas</td></tr>             <tr><td style='padding: 3px 0;'><b>Fakultas:</b></td><td>Ibadah</td></tr>         </table>     </div>     </div>`)[0];
+                popup_148c316856095c745973f01cc9a06760.setContent(html_809739f05d36a5fcafbf673651c93d47);
+            
+        
+
+        marker_098e4e4e462a080e26f0fb0788e45a53.bindPopup(popup_148c316856095c745973f01cc9a06760)
+        ;
+
+        
+    
+    
+            marker_098e4e4e462a080e26f0fb0788e45a53.bindTooltip(
+                `<div>
+                     Masjid Al Fatihah UNMUL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_098e4e4e462a080e26f0fb0788e45a53.setIcon(icon_01671d0fad32a71996aa58854c75402f);
+            
+    
+            map_41efd0f78144b5822cee30f5c6bc247d.fitBounds(
+                [[-0.468451, 117.153998], [-0.467609, 117.154421], [-0.470041, 117.153081], [-0.467574, 117.158993], [-0.465643, 117.155989], [-0.471166, 117.153465], [-0.469137, 117.153989], [-0.468322, 117.155114], [-0.468405, 117.154165], [-0.468817, 117.156964], [-0.467838, 117.155853], [-0.46996, 117.153835], [-0.466004, 117.155578]],
+                {}
+            );
+        
+</script>
+</html>
